@@ -1,11 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
 	public static GameManager instance;
+	
 	private void Awake()
 	{
 		if (instance != null)
@@ -18,6 +20,8 @@ public class GameManager : MonoBehaviour
 			DontDestroyOnLoad(gameObject);
 		}
 	}
-
-	
+	public void Home()
+	{
+		SceneManager.LoadScene("MainMenu");
+	}
 }

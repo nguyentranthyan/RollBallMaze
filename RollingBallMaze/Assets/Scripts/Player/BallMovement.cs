@@ -52,8 +52,13 @@ public class BallMovement : MonoBehaviour
 	{
 		if (collision.gameObject.CompareTag("Obstacle"))
 		{
-			//SceneManager.LoadScene("GameOver");
+			Score.currentScore = 0;
 			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+		}
+		if (collision.gameObject.CompareTag("Collect"))
+		{
+			Score.currentScore += 100;
+			collision.gameObject.SetActive(false);
 		}
 	}
 }

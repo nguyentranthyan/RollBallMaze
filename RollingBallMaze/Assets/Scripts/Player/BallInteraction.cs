@@ -13,11 +13,6 @@ public class BallInteraction : MonoBehaviour
 	{
 		if (Input.GetMouseButtonDown(0) && currentKey)
 		{
-			////check inventory
-			//if (currentInterKeyscript.inventory)
-			//{
-			//	inventory.AddItem(currentKey);
-			//}
 			//check to see if this object can be opened
 			if (currentInterKeyscript.openable)
 			{
@@ -30,15 +25,18 @@ public class BallInteraction : MonoBehaviour
 					if (inventory.FindItem(currentInterKeyscript.itemNeeded))
 					{
 						//we found the item needed
+						Debug.Log("1");
 						currentInterKeyscript.locked = false;
 					}
 				}
 				else
 				{
 					StartCoroutine(Open());
+					inventory.removeItem(currentInterKeyscript.itemNeeded);
 				}
 			}
 		}
+
 	}
 
 	private IEnumerator Open()
@@ -56,28 +54,6 @@ public class BallInteraction : MonoBehaviour
 			{
 				inventory.AddItem(currentKey);
 			}
-			////check to see if this object can be opened
-			//if (currentInterKeyscript.openable)
-			//{
-			//	//check to see if this object is locked
-			//	if (currentInterKeyscript.locked)
-			//	{
-			//		Debug.Log("item");
-			//		//check to see if we have the object need to unclock
-			//		//search our inventory for the item need -if found unlockobject
-			//		if (inventory.FindItem(currentInterKeyscript.itemNeeded))
-			//		{
-			//		//	we found the item needed
-			//			currentInterKeyscript.locked = false;
-			//			currentInterKeyscript.open();
-			//		}
-			//	}
-			//	else
-			//	{
-			//		Debug.Log(currentKey.name);
-			//		currentInterKeyscript.open();
-			//	}
-			//}
 		}
 	}
 

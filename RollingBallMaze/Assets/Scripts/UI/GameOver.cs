@@ -2,13 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OptionsMenu : MonoBehaviour
+public class GameOver : MonoBehaviour
 {
-	public void SetVolume(float volume)
-	{
-
-	}
-
     // Start is called before the first frame update
     void Start()
     {
