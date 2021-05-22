@@ -19,6 +19,7 @@ public class BallMovement : MonoBehaviour
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
 		m_Animator = GetComponent<Animator>();
 		transform.position = startPosition.position;
+		GameManager.instance.playMusic();
 	}
 
     // Update is called once per frame
@@ -52,11 +53,13 @@ public class BallMovement : MonoBehaviour
 	{
 		if (collision.gameObject.CompareTag("Obstacle"))
 		{
+			GameManager.instance.playDeath();
 			Score.currentScore = 0;
 			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 		}
 		if (collision.gameObject.CompareTag("Collect"))
 		{
+			GameManager.instance.playCollect();
 			Score.currentScore += 100;
 			collision.gameObject.SetActive(false);
 		}

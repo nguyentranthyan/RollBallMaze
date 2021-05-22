@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "H9AXB7725642GZV",
         "name": "com.StartUp.RollBall",
-        "processId": 19597,
+        "processId": 550,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -54,6 +54,24 @@
             "deviceId": "H9AXB7725642GZV",
             "name": "com.StartUp.RollBall",
             "processId": 19597,
+            "exited": false
+        },
+        {
+            "deviceId": "H9AXB7725642GZV",
+            "name": "com.StartUp.RollBall",
+            "processId": 10766,
+            "exited": false
+        },
+        {
+            "deviceId": "H9AXB7725642GZV",
+            "name": "com.StartUp.RollBall",
+            "processId": 19970,
+            "exited": false
+        },
+        {
+            "deviceId": "H9AXB7725642GZV",
+            "name": "com.StartUp.RollBall",
+            "processId": 550,
             "exited": false
         }
     ],

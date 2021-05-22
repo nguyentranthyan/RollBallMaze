@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2046976158319700841}
   - component: {fileID: 2046976158319700836}
   - component: {fileID: 1513001426}
-  - component: {fileID: 1513001428}
+  - component: {fileID: 1376614155}
   - component: {fileID: 1513001427}
   m_Layer: 0
   m_Name: block_locked_square
@@ -139,7 +139,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.28, y: 1.7414347}
   m_EdgeRadius: 0
---- !u!95 &1513001428
+--- !u!95 &1376614155
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -174,4 +174,4 @@ MonoBehaviour:
   openable: 1
   locked: 1
   itemNeeded: {fileID: 0}
-  anim: {fileID: 1513001428}
+  anim: {fileID: 1376614155}
