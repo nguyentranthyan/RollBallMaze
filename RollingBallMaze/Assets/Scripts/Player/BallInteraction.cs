@@ -8,6 +8,7 @@ public class BallInteraction : MonoBehaviour
 	public GameObject currentKey = null;
 	public InteractionObject currentInterKeyscript = null;
 	public Inventory inventory;
+	public GameObject instruction;
 
 	private void Update()
 	{
@@ -44,7 +45,12 @@ public class BallInteraction : MonoBehaviour
 		yield return new WaitForSeconds(.1f);
 		currentInterKeyscript.open();
 	}
-
+	private IEnumerator Intruction()
+	{
+		instruction.SetActive(true);
+		yield return new WaitForSeconds(2f);
+		instruction.SetActive(false);
+	}
 	public void PickUp()
 	{
 		if (currentKey)
@@ -61,6 +67,7 @@ public class BallInteraction : MonoBehaviour
 	{
 		if (collision.CompareTag("Key"))
 		{
+			StartCoroutine(Intruction());
 			currentKey = collision.gameObject;
 			currentInterKeyscript = currentKey.GetComponent<InteractionObject>();
 		}

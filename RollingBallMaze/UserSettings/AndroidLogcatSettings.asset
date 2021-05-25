@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "H9AXB7725642GZV",
         "name": "com.StartUp.RollBall",
-        "processId": 550,
+        "processId": 30684,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -72,6 +72,12 @@
             "deviceId": "H9AXB7725642GZV",
             "name": "com.StartUp.RollBall",
             "processId": 550,
+            "exited": false
+        },
+        {
+            "deviceId": "H9AXB7725642GZV",
+            "name": "com.StartUp.RollBall",
+            "processId": 30684,
             "exited": false
         }
     ],
