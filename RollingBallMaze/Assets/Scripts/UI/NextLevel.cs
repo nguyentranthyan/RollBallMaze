@@ -17,6 +17,7 @@ public class NextLevel : MonoBehaviour
 	public int timeCalc;
 	public int scoreCalc;
 	public int totalScore;
+	public int scoreStars;
 	public int highscore;
 
 	private void OnTriggerEnter2D(Collider2D collision)
@@ -27,7 +28,8 @@ public class NextLevel : MonoBehaviour
 		totalScore = Score.currentScore + timeCalc;
 		totalScored.GetComponent<Text>().text = "Total Score : " + totalScore;
 		highscore = totalScore;
-		
+		scoreStars = totalScore;
+
 		if (PlayerPrefs.GetInt("LevelScore")<= highscore)
 		{
 			PlayerPrefs.SetInt("LevelScore", highscore);

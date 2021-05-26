@@ -22,8 +22,8 @@ public class BallMovement : MonoBehaviour
 		GameManager.instance.playMusic();
 	}
 
-    // Update is called once per frame
-    void Update()
+	// Update is called once per frame
+	void Update()
     {
 		m_ChangeMove.x = Input.GetAxisRaw("Horizontal");
 		m_ChangeMove.y = Input.GetAxisRaw("Vertical");
@@ -54,8 +54,8 @@ public class BallMovement : MonoBehaviour
 		if (collision.gameObject.CompareTag("Obstacle"))
 		{
 			GameManager.instance.playDeath();
-			Score.currentScore = 0;
 			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+			Score.currentScore = 0;
 		}
 		if (collision.gameObject.CompareTag("Collect"))
 		{

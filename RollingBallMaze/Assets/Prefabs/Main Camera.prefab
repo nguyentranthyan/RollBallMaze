@@ -60,11 +60,11 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 2
+  orthographic size: 4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 2147483647
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -100,5 +100,5 @@ MonoBehaviour:
   smoothTimeX: 0
   player: {fileID: 0}
   bounds: 1
-  minCameraPos: {x: -6.1, y: -3.72, z: 0}
-  maxCameraPos: {x: 7.82, y: 4.93, z: 0}
+  minCameraPos: {x: -2.56, y: -1.81, z: 0}
+  maxCameraPos: {x: 4.39, y: 2.83, z: 0}

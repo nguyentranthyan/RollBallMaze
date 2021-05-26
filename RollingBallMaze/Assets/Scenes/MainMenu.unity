@@ -841,7 +841,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -138, y: -105}
+  m_AnchoredPosition: {x: -152, y: -105}
   m_SizeDelta: {x: 70, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &600745972
@@ -978,7 +978,6 @@ MonoBehaviour:
   bestScoreDisplay: {fileID: 896835070}
   AudioPanel: {fileID: 0}
   bestScore: 0
-  volumesider: {fileID: 0}
 --- !u!1 &896835070
 GameObject:
   m_ObjectHideFlags: 0
@@ -1237,7 +1236,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 44, y: -103}
+  m_AnchoredPosition: {x: 35, y: -103}
   m_SizeDelta: {x: 70, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1009439377
@@ -1520,7 +1519,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -90, y: -96.77}
+  m_AnchoredPosition: {x: -90, y: -96.76999}
   m_SizeDelta: {x: 100, y: 106.45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1378125304
@@ -2095,7 +2094,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 10.890015, y: -96.44}
+  m_AnchoredPosition: {x: 10.890137, y: -96.43994}
   m_SizeDelta: {x: -155.63, y: -308.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1925339678
